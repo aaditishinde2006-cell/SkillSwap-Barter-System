@@ -5,7 +5,20 @@ SkillSwap is an Android-based skill exchange platform where users can connect, s
 The platform allows users to create profiles, discover members, exchange knowledge, and communicate through real-time chat. A responsive web version was developed and packaged as an Android application (APK) for mobile users.
 
 ---
+# 🌐 Live Demo
 
+### 🌍 Web Application
+
+https://skillswap.edgeone.app/
+
+### 📱 Android APK
+
+Download the latest APK here:
+
+**Google Drive:**  
+https://drive.google.com/file/d/19I7Apvv_7xrhAfsP4JP3NNWx3UMl1MTA/view?usp=drive_link
+
+---
 # 📌 Project Overview
 
 SkillSwap connects people who want to learn new skills with those who are willing to teach them.
