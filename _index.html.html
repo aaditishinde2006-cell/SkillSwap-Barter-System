@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skillswap — Final App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Skillswap</h1>
+      <p class="tag">Exchange skills · Search · Connect</p>
+    </header>
+
+    <main>
+      <!-- Profile -->
+      <section class="card">
+        <h2>My Profile</h2>
+        <form id="profile-form" autocomplete="off">
+          <label>Name<input id="name" type="text" required></label>
+          <label>Email (login ID)<input id="email" type="email" required></label>
+          <label>Skill you have<input id="skill-have" type="text"></label>
+          <label>Skill you want<input id="skill-want" type="text"></label>
+          <label>Bio<textarea id="bio" rows="3"></textarea></label>
+          <div class="row">
+            <button type="submit">Save Profile</button>
+            <button type="button" id="clear-profile" class="danger">Clear</button>
+          </div>
+        </form>
+        <div id="profile-preview" class="preview"></div>
+      </section>
+
+      <!-- Search & Profiles -->
+      <section class="card">
+        <h2>Find People</h2>
+        <input id="search-box" placeholder="Search by name, skill, or email">
+        <ul id="profiles-list" class="list"></ul>
+      </section>
+
+      <!-- Friend Requests -->
+      <section class="card">
+        <h2>Friend Requests</h2>
+        <ul id="requests-list" class="list"></ul>
+      </section>
+
+      <!-- Friends List -->
+      <section class="card">
+        <h2>My Friends</h2>
+        <ul id="friends-list" class="list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <!-- Friend request modal -->
+  <div id="request-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Send Friend Request</h3>
+      <p id="request-to"></p>
+      <textarea id="request-message" rows="3" placeholder="Write a short message..."></textarea>
+      <div class="row">
+        <button id="send-request-btn">Send</button>
+        <button id="cancel-request-btn" class="danger">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat modal -->
+  <div id="chat-modal" class="modal hidden">
+    <div class="modal-content chat-box">
+      <h3 id="chat-with"></h3>
+      <div id="chat-messages" class="messages"></div>
+      <input id="chat-input" placeholder="Type a message...">
+      <div class="row">
+        <button id="send-chat-btn">Send</button>
+        <button id="close-chat-btn" class="danger">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call modal -->
+  <div id="call-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="call-status">Calling...</h3>
+      <video id="remoteVideo" autoplay playsinline></video>
+      <video id="localVideo" autoplay muted playsinline></video>
+      <div class="row">
+        <button id="end-call-btn" class="danger">End Call</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
