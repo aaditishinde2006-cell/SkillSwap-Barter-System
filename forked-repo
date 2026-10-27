@@ -1,0 +1,3 @@
+% curl -s https://api.github.com/repos/aaditishinde2006-cell/SkillSwap-Barter-System | grep -E '"fork"|"full_name"'
+  "full_name": "aaditishinde2006-cell/SkillSwap-Barter-System",
+  "fork": false,
