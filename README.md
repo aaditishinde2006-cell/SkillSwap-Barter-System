@@ -1,4 +1,20 @@
-# 🚀 SkillSwap – Barter System
+# SkillSwap – Barter System
+
+## Simple Interest Calculator
+
+This project includes a Bash-based Simple Interest Calculator.
+
+The calculator takes the following user inputs:
+
+- Principal amount (P)
+- Rate of interest (R)
+- Time period (T)
+
+The simple interest is calculated using the formula:
+
+SI = (P × R × T) / 100
+
+The calculated simple interest is displayed to the user.
 
 SkillSwap is an Android-based skill exchange platform where users can connect, share, and barter their skills without monetary transactions.
 
